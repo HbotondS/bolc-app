@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "482106246125",
+    "project_id": "bolc-app",
+    "storage_bucket": "bolc-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482106246125:android:0903e179b7c0c4b033dde4",
+        "android_client_info": {
+          "package_name": "com.example.bolcapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIKBjWUpX-_MbJUMGKiaxD-ta1cVsHSQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
