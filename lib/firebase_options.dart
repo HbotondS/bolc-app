@@ -4,16 +4,6 @@ import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
-/// Default [FirebaseOptions] for use with your Firebase apps.
-///
-/// Example:
-/// ```dart
-/// import 'firebase_options.dart';
-/// // ...
-/// await Firebase.initializeApp(
-///   options: DefaultFirebaseOptions.currentPlatform,
-/// );
-/// ```
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -25,8 +15,6 @@ class DefaultFirebaseOptions {
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
-      case TargetPlatform.iOS:
-        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -55,14 +43,5 @@ class DefaultFirebaseOptions {
     messagingSenderId: '482106246125',
     projectId: 'bolc-app',
     storageBucket: 'bolc-app.firebasestorage.app',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBMay7Zo8L-Epn1FpHNwm6X-ujUX8ra-PU',
-    appId: '1:482106246125:ios:66b6efcd391055b433dde4',
-    messagingSenderId: '482106246125',
-    projectId: 'bolc-app',
-    storageBucket: 'bolc-app.firebasestorage.app',
-    iosBundleId: 'com.bolc.app',
   );
 }
