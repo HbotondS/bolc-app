@@ -49,7 +49,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   bool _isBolc() {
     // if the counter is 3, can be devided by 3 or contains 3 the player should say "bolc"
-    return _counter % 3 == 0 || _counter.toString().contains('3');
+    return _counter % 3 == 0 || _counter.toString().contains('3') ||
+          _counter % 7 == 0 || _counter.toString().contains('7');
   }
 
   @override
