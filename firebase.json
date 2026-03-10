@@ -1,22 +1,36 @@
 {
-    "flutter": {
-        "platforms": {
-            "android": {
-                "default": {
-                    "projectId": "bolc-app",
-                    "appId": "1:482106246125:android:0903e179b7c0c4b033dde4",
-                    "fileOutput": "android/app/google-services.json"
-                }
-            },
-            "dart": {
-                "lib/firebase_options.dart": {
-                    "projectId": "bolc-app",
-                    "configurations": {
-                        "android": "1:482106246125:android:0903e179b7c0c4b033dde4",
-                        "ios": "1:482106246125:ios:66b6efcd391055b433dde4"
-                    }
-                }
-            }
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "bolc-app",
+          "appId": "1:482106246125:android:0903e179b7c0c4b033dde4",
+          "fileOutput": "android/app/google-services.json"
         }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "bolc-app",
+          "configurations": {
+            "android": "1:482106246125:android:0903e179b7c0c4b033dde4",
+            "ios": "1:482106246125:ios:66b6efcd391055b433dde4"
+          }
+        }
+      }
     }
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
 }
