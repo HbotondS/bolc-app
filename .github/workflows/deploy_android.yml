@@ -35,9 +35,9 @@ jobs:
       - name: Deploy to Firebase App Distribution
         uses: w9jds/firebase-action@master
         with:
-          args: |
-            appdistribution:distribute build/app/outputs/flutter-apk/app-release.apk \
-            --app "1:482106246125:android:0903e179b7c0c4b033dde4" \
+          args: >
+            appdistribution:distribute build/app/outputs/flutter-apk/app-release.apk
+            --app "1:482106246125:android:0903e179b7c0c4b033dde4"
             --release-notes "${{ inputs.release_notes }}"
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_APP_DISTRIBUTION_TOKEN }}
